@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Dégradé Violet Premium pour le 'j' et le 'x' -->
+    <linearGradient id="jGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+    
+    <!-- Dégradé Argenté pour le 'q' (Download) -->
+    <linearGradient id="qGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#9ca3af"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond de l'application -->
+  <rect width="512" height="512" rx="112" fill="#0f111a"/>
+  
+  <!-- 'x' (Point du j / Symbole de JQBTX) -->
+  <path d="M 142 116 L 190 164 M 190 116 L 142 164" 
+        fill="none" stroke="url(#jGrad)" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- 'j' (JuGdx) -->
+  <path d="M 166 210 L 166 340 A 50 50 0 0 1 116 390" 
+        fill="none" stroke="url(#jGrad)" stroke-width="44" stroke-linecap="round"/>
+        
+  <!-- 'q' (Boucle - qBittorrent) -->
+  <circle cx="306" cy="260" r="50" 
+          fill="none" stroke="url(#qGrad)" stroke-width="44"/>
+          
+  <!-- 'q' (Tige + Flèche de téléchargement) -->
+  <path d="M 356 210 L 356 390 M 316 350 L 356 390 L 396 350" 
+        fill="none" stroke="url(#qGrad)" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
